@@ -196,7 +196,7 @@ if (shouldFetchData && fid) {
     `Get the count of users not Following you Back in your DMs \n \nTool by @cashlessman.eth`
 );
  
-  const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://moxiedemo.vercel.app/frames`;
+  const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://followsback.vercel.app/frames`;
 
   const buttons = [];
 
