@@ -76,8 +76,6 @@ const frameHandler = frames(async (ctx) => {
       if (!fbResponse.ok) {
         throw new Error(`Follow HTTP error! status: ${fbResponse.status}`);
       }
-      // followData = await fbResponse.json();
-      // let x=followData?.nullFollowerCount;
     } catch (err) {
       console.error("Error fetching Follow data:", err);
       error = (err as Error).message;
@@ -220,9 +218,6 @@ if (shouldFetchData && fid) {
     );
   } else {
     buttons.push(
-<Button action="post" target={{ href: `${appURL()}?userfid=${fid}` }}>
-        Get DC
-      </Button>,
       <Button action="link" target={shareUrl}>
         Share
       </Button>,
